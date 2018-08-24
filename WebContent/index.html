@@ -1,0 +1,73 @@
+<HTML>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>	
+	<title>Game Arena	
+	</title>
+	<body style="background-image: url(Images/giphy1.gif);">
+		<div class="navbar" >
+			
+			<table>
+				<tbody>
+			<tr>	
+				<td><div class="web-name">Game Arena</div></td>
+			<td>
+				<div class="searchbar">
+				<input type="text" placeholder="Search (By Name)" id="search">
+				</div>
+				
+			</td>
+				<td>
+					<div class="dropdown">
+							
+							<img src="Images/if_filter_299094.png" id="filter" class="dropbtn" onclick="myFunction()">
+							<div id="myDropdown" class="dropdown-content">
+								<ul class="pop-menu" id="pop-menu-id">
+									<li>All Games</li>
+								</ul>
+  							</div>
+						</div>
+					
+				</td>
+				<td>
+					<img src="Images/if_Grid_1031514.png" id="grid-icon">
+				</td>
+			</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="loading">
+    	Loading content, please wait..
+    	<img src="loading.gif" alt="loading.." />
+		</div>
+	<div class="main">
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon0" class="catviewicon" onclick="HideCat(0);"></td><td><h1 class="cathead">PC GAMES</h1></td><hr>
+		<ul id="PC" class="catagory"></ul>
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon1" class="catviewicon" onclick="HideCat(1);"></td><td><h1 class="cathead">XBOX GAMES</h1></td><hr>
+		<ul id="xbox" class="catagory"></ul>
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon2" class="catviewicon" onclick="HideCat(2);"></td><td><h1 class="cathead">PLAY STATION GAMES</h1></td><hr>
+		<ul id="playstation" class="catagory"></ul>
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon3" class="catviewicon" onclick="HideCat(3);"></td><td><h1 class="cathead">MAC GAMES</h1></td><hr>
+		<ul id="mac" class="catagory"></ul>
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon4" class="catviewicon" onclick="HideCat(4);"></td><td><h1 class="cathead">LINUX GAMES</h1></td><hr>
+		
+		<ul id="linux" class="catagory"></ul>
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon5" class="catviewicon" onclick="HideCat(5);"></td><td><h1 class="cathead">IPHONE GAMES</h1></td><hr>
+		
+		<ul id="iphone" class="catagory"></ul>
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon6" class="catviewicon" onclick="HideCat(6);"></td><td><h1 class="cathead">IPAD GAMES</h1></td><hr>
+		
+		<ul id="ipad" class="catagory"></ul>
+		<td><img src="Images/if_Eye_see_unview_hide_optical_blind_invisible_1886933.png" id="icon7" class="catviewicon" onclick="HideCat(7);"></td><td><h1 class="cathead">OTHER GAMES</h1></td><hr>
+		
+		<ul id="games" class="catagory"></ul>
+	</div>
+	</body>
+	<script type="text/javascript">
+	$(window).on('load', function () {
+      $('#loading').hide();
+ });
+</script>
+<script type="text/javascript" src="main.js"></script>
+		
+</HTML>
